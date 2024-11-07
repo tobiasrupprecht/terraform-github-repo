@@ -12,13 +12,11 @@ variable "repository_name" {
 variable "description" {
   description = "A short description of the GitHub repository"
   type        = string
-  default     = ""
 }
 
 variable "visibility" {
   description = "The visibility of the repository. Options are 'public' or 'private'"
   type        = string
-  default     = "private"
   validation {
     condition     = contains(["public", "private"], var.visibility)
     error_message = "Visibility must be either 'public' or 'private'."
