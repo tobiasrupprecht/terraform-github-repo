@@ -9,4 +9,5 @@ resource "github_repository" "repo" {
   description = var.description
   visibility  = var.visibility
   has_issues  = true
+  auto_init   = true
 }
