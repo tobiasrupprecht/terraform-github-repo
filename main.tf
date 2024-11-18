@@ -8,4 +8,5 @@ resource "github_repository" "repo" {
   name        = var.repository_name
   description = var.description
   visibility  = var.visibility
+  has_issues  = true
 }
