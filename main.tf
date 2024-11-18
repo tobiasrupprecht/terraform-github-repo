@@ -10,5 +10,5 @@ resource "github_repository" "repo" {
   visibility  = var.visibility
   has_issues  = true
   auto_init   = true
-  gitignore_template = "sample"
+  #gitignore_template = "sample"
 }
